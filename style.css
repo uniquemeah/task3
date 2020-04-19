@@ -1,6 +1,17 @@
 *{padding: 0;
     margin: 0;
 }
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
 
 body{
     background-image: url(./photo3.jpg);
@@ -43,4 +54,39 @@ h4{
     font-family: 'Lato', sans-serif;
     line-height: 25px;
     padding-bottom: 200px;
+}
+form{
+    color: rgb(255, 255, 255);
+    align-items: left;
+    margin-left: 100px;
+    font-family: 'Lato', sans-serif;
+    padding-bottom: 200px;
+   min-width: 100px;
+max-width: 450px;
+}
+form .form-group label{
+    font-size: .75rem;
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+}
+form .form-group input, .form-group select{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    color: #1a202c;
+    background-color: #edf2f7;
+    margin-bottom: 20px;
+    border: none;
+}
+form .submit button{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(39, 15, 252);
+    text-transform: uppercase;
+   color: rgb(253, 253, 255);
+   text-align: center;
+   font-size: 14px;
+   font-weight: 700;
 }
